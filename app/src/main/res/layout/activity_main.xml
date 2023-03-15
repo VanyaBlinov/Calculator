@@ -6,40 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvScreenNum2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:background="@color/marine"
+        android:background="@color/white"
         android:gravity="bottom|end"
+        android:textColor="@color/marine"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
-        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintBottom_toTopOf="@+id/tvScreenNum1"
+        app:layout_constraintEnd_toEndOf="@+id/tvScreenNum1"
+        app:layout_constraintStart_toStartOf="@+id/tvScreenNum1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvScreen"
+        android:id="@+id/tvScreenNum1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="40dp"
         android:layout_margin="1dp"
         android:background="@color/white"
         android:gravity="bottom|end"
         android:text="0"
         android:textColor="@color/marine"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.40" />
+        app:layout_constraintGuide_percent="0.46" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -236,4 +236,5 @@
                 android:textSize="34sp" />
         </TableRow>
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
